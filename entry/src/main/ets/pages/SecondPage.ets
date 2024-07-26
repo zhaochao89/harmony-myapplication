@@ -26,18 +26,18 @@ struct SecondPage {
         })
         .width(200)
         .height(44)
+        .onClick(() => {
+          console.info(`Click 'Next' button Successful.`)
+          try {
+            //返回上一页
+            router.back()
+          } catch (e) {
+            let code = (e as BusinessError).code
+            let message = (e as BusinessError).message
+            console.error(`Back to first page Failed: code ${code}, message: ${message}.`)
+          }
+        })
       }
-      .onClick(() => {
-        console.info(`Click 'Next' button Successful.`)
-        try {
-          //返回上一页
-          router.back()
-        } catch (e) {
-          let code = (e as BusinessError).code
-          let message = (e as BusinessError).message
-          console.error(`Back to first page Failed: code ${code}, message: ${message}.`)
-        }
-      })
       .width('100%')
     }
     .height('100%')

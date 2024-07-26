@@ -1,5 +1,8 @@
 import { router } from '@kit.ArkUI';
 import { BusinessError } from '@kit.BasicServicesKit';
+import { test } from './test';
+//导入绑定* as Test表示绑定名称“Test”，通过Test.test()可访问从导入路径指定的模块导出的所有实体：
+import * as Test from './test';
 
 @Entry
 @Component
@@ -12,6 +15,14 @@ struct Index {
         Text(this.message)
           .fontSize(35)
           .fontWeight(FontWeight.Bold)
+          .backgroundColor(Color.Gray)
+        Divider()
+          .backgroundColor(Color.Red)
+          .margin({
+            top: 10,
+            left: 16,
+            right: 16
+          })
         Button() {
           Text('Next')
             .fontSize(20)
@@ -35,9 +46,50 @@ struct Index {
               console.error(`Jump to second page Failed: code: ${err.code}, message: ${err.message}.`)
             })
         })
+
+        Divider()
+          .backgroundColor('#dddddd')
+          .margin({
+            top: 8,
+            left: 16,
+            right: 16
+          })
+        Button() {
+          Text('测试')
+            .fontSize(20)
+            .fontColor(Color.White)
+            .fontWeight(FontWeight.Bold)
+        }
+        .backgroundColor(Color.Red)
+        .type(ButtonType.Capsule)
+        .margin({
+          top: 20
+        })
+        .width(200)
+        .height(44)
+        .onClick(() => {
+          test();
+          Test.test();
+        })
+        HelloComponent()
+          .margin({
+            top: 20
+          })
       }
       .width('100%')
     }
     .height('100%')
+  }
+}
+
+@Component
+struct HelloComponent {
+  @State message: string = 'Hello World';
+
+  build() {
+    Text(this.message)
+      .fontSize(35)
+      .fontWeight(FontWeight.Bold)
+      .fontColor(Color.Pink)
   }
 }
