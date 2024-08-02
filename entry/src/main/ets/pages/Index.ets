@@ -1,12 +1,15 @@
 import TestPage from '../components/TestRoutePage';
-import { ArtUITestScrollPage } from '../artui/ArtUITestScrollPage';
+import { ArtUITestScroll } from '../artui/ArtUITestScroll';
+import { ArtUITestStack } from '../artui/ArtUITestStack';
+import { ArtUITestFlex } from '../artui/ArtUITestFlex';
+import { ArtUITestRelativeContainer } from '../artui/ArtUITestRelativeContainer';
 
 @Entry
 @Component
 struct Index {
   build() {
     Column(){
-      ArtUITestScrollPage()
+      ArtUITestRelativeContainer()
     }
   }
 }
