@@ -6,13 +6,14 @@ import { ArtUITestRelativeContainer } from '../artui/ArtUITestRelativeContainer'
 import { ArtUITestGridRow } from '../artui/ArtUITestGridRow';
 import { ArtUITestMediaQuery } from '../artui/ArtUITestMediaQuery';
 import { ArtUITestList } from '../artui/ArtUITestList';
+import { ToDoList } from '../TodoList/ToDoList';
 
 @Entry
 @Component
 struct Index {
   build() {
     Column(){
-      ArtUITestList()
+      ToDoList()
     }
   }
 }
