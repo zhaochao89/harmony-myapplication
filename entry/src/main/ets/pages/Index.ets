@@ -7,13 +7,16 @@ import { ArtUITestGridRow } from '../artui/ArtUITestGridRow';
 import { ArtUITestMediaQuery } from '../artui/ArtUITestMediaQuery';
 import { ArtUITestList } from '../artui/ArtUITestList';
 import { ToDoList } from '../TodoList/ToDoList';
+import { ArtUITestGrid } from '../artui/ArtUITestGrid';
+import { ArtUITestSwiper } from '../artui/ArtUITestSwiper';
+import { ArtUITestTabs } from '../artui/ArtUITestTabs';
 
 @Entry
 @Component
 struct Index {
   build() {
     Column(){
-      ToDoList()
+      ArtUITestTabs()
     }
   }
 }
