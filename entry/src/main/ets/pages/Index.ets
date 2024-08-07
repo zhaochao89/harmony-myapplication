@@ -10,9 +10,12 @@ import { ToDoList } from '../TodoList/ToDoList';
 import { ArtUITestGrid } from '../artui/ArtUITestGrid';
 import { ArtUITestSwiper } from '../artui/ArtUITestSwiper';
 import { ArtUITestTabs } from '../artui/ArtUITestTabs';
+import TestRoutePage from '../components/TestRoutePage';
+import { ArtUITestPage } from '../artui/ArtUITestPage';
+import { ArtUITestDecorators } from '../artui/ArtUITestDecorators';
 
 let storage = LocalStorage.getShared();
-
+//@Entry页面入口，即页面的根节点，一个页面有且仅有一个@Entry。只有被@Entry修饰的组件才可以调用页面的生命周期。
 @Entry(storage)
 @Component
 struct Index {
@@ -21,7 +24,7 @@ struct Index {
 
   build() {
     Column(){
-      ToDoList()
+      ArtUITestDecorators()
     }
     // .margin({ bottom: this.bottomRectHeight })
   }

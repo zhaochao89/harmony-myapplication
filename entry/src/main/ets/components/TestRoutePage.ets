@@ -7,6 +7,19 @@ import * as Test from '../pages/test';
 @Component
 export default struct TestRoutePage {
   @State message: string = 'Hello World';
+//组件的生命周期
+  //组件即将出现时，在执行build()函数之前
+  aboutToAppear(): void {
+    console.info('+++++aboutToAppear');
+  }
+  //组件build()函数执行完成之后
+  onDidBuild(): void {
+    console.info('+++++onDidBuild');
+  }
+  //组件析构销毁之前执行
+  aboutToDisappear(): void {
+    console.info('+++++aboutToDisappear');
+  }
 
   build() {
     Row() {

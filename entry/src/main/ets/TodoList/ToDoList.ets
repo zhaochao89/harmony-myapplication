@@ -13,8 +13,8 @@ export struct ToDoList {
       this.selectedItems = [];
     }
   }
-
-  deleteData() {
+  //声明箭头函数，组件的事件方法可以直接调用，不需要bind this
+  deleteData = () => {
     this.selectedItems.forEach((todo: ToDo) => {
       let index = this.toDoData.indexOf(todo);
       if (index !== -1) {
@@ -92,9 +92,7 @@ export struct ToDoList {
           .backgroundColor(Color.Red)
           .fontColor(Color.White)
           .fontSize(16)
-          .onClick(() => {
-            this.deleteData();
-          })
+          .onClick(this.deleteData)
       }
     }
   }
