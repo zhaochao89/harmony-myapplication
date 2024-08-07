@@ -11,12 +11,18 @@ import { ArtUITestGrid } from '../artui/ArtUITestGrid';
 import { ArtUITestSwiper } from '../artui/ArtUITestSwiper';
 import { ArtUITestTabs } from '../artui/ArtUITestTabs';
 
-@Entry
+let storage = LocalStorage.getShared();
+
+@Entry(storage)
 @Component
 struct Index {
+
+  bottomRectHeight: string = AppStorage.get<Number>('bottomRectHeight') + 'px';
+
   build() {
     Column(){
-      ArtUITestTabs()
+      ToDoList()
     }
+    // .margin({ bottom: this.bottomRectHeight })
   }
 }

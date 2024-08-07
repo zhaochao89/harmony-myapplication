@@ -24,9 +24,16 @@ export struct ToDoList {
     this.isEditMode = false;
   }
 
+
   build() {
     Stack({ alignContent: Alignment.Bottom }) {
       Column() {
+        Row() {
+          Text('Top Row').fontSize(40).textAlign(TextAlign.Center).width('100%')
+        }
+        .backgroundColor('#F08080')
+        //设置顶部绘制延伸到状态栏
+        .expandSafeArea([SafeAreaType.SYSTEM], [SafeAreaEdge.TOP])
         Row() {
           if (this.isEditMode) {
             Text('X')
@@ -68,8 +75,13 @@ export struct ToDoList {
             }
           }, (todoItem: ToDo) => todoItem.key.toString())
         }
-
-        // Blank()
+        Blank()
+        Row() {
+          Text('Bottom Row').fontSize(40).textAlign(TextAlign.Center).width('100%')
+        }
+        .backgroundColor(Color.Orange)
+        //设置顶部绘制延伸到导航条
+        .expandSafeArea([SafeAreaType.SYSTEM], [SafeAreaEdge.BOTTOM])
       }
       .backgroundColor('#fff1f3f5')
       .height('100%')
