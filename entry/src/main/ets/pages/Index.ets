@@ -12,7 +12,10 @@ import { ArtUITestSwiper } from '../artui/ArtUITestSwiper';
 import { ArtUITestTabs } from '../artui/ArtUITestTabs';
 import TestRoutePage from '../components/TestRoutePage';
 import { ArtUITestPage } from '../artui/ArtUITestPage';
-import { ArtUITestDecorators } from '../artui/ArtUITestDecorators';
+import { ArtUITestBuilderParam } from '../artui/ArtUITestBuilderParam';
+import { ArtUITestWrapBuilder } from '../artui/ArtUITestWrapBuilder';
+import { ArtUITestStyles } from '../artui/ArtUITestStyles';
+import { ArtUITestExtend } from '../artui/ArtUITestExtend';
 
 let storage = LocalStorage.getShared();
 //@Entry页面入口，即页面的根节点，一个页面有且仅有一个@Entry。只有被@Entry修饰的组件才可以调用页面的生命周期。
@@ -24,7 +27,7 @@ struct Index {
 
   build() {
     Column(){
-      ArtUITestDecorators()
+      ArtUITestExtend()
     }
     // .margin({ bottom: this.bottomRectHeight })
   }

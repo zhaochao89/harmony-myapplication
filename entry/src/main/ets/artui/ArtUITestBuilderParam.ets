@@ -2,7 +2,7 @@
 import { text } from '@kit.ArkGraphics2D';
 
 @Component
-export struct ArtUITestDecorators {
+export struct ArtUITestBuilderParam {
   @State message: string = 'Hello World!';
 
   @Builder
