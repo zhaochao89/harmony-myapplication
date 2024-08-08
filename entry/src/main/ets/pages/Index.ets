@@ -16,6 +16,9 @@ import { ArtUITestBuilderParam } from '../artui/ArtUITestBuilderParam';
 import { ArtUITestWrapBuilder } from '../artui/ArtUITestWrapBuilder';
 import { ArtUITestStyles } from '../artui/ArtUITestStyles';
 import { ArtUITestExtend } from '../artui/ArtUITestExtend';
+import { ArtUITestStateStyles } from '../artui/ArtUITestStateStyles';
+import { ArtUITestAnimatableExtend } from '../artui/ArtUITestAnimatableExtend';
+import { ArtUITestRequire } from '../artui/ArtUITestRequire';
 
 let storage = LocalStorage.getShared();
 //@Entry页面入口，即页面的根节点，一个页面有且仅有一个@Entry。只有被@Entry修饰的组件才可以调用页面的生命周期。
@@ -27,7 +30,7 @@ struct Index {
 
   build() {
     Column(){
-      ArtUITestExtend()
+      ArtUITestRequire()
     }
     // .margin({ bottom: this.bottomRectHeight })
   }
