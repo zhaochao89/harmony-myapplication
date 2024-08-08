@@ -2,7 +2,7 @@ const alphabets = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
   'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 
 @Component
-export struct ArtUITestList {
+export struct ArkUITestList {
   //List滚动监听
   private listScroller: Scroller = new Scroller();
   @State selectedIndex: number = 1;

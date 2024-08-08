@@ -27,7 +27,7 @@ function changeTextSize(size: number) {
 }
 
 @Component
-export struct ArtUITestExtend {
+export struct ArkUITestExtend {
   @State message: string = 'Click me';
   @State sizeValue: number = 20;
 

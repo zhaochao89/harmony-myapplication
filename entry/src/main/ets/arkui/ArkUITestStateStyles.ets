@@ -11,7 +11,7 @@
 //
 // selected10+：选中态。
 @Component
-export struct ArtUITestStateStyles {
+export struct ArkUITestStateStyles {
   @State focusedColor: Color = Color.Black;
   pressedColor: Color = Color.Green;
 

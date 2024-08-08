@@ -1,6 +1,6 @@
 
 @Component
-export struct ArtUITestSwiper {
+export struct ArkUITestSwiper {
 
   build() {
     Swiper(){

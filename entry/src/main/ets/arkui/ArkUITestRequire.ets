@@ -4,7 +4,7 @@
  * @Require装饰器修饰的，在构造时必须传参。
  * */
 @Component
-export struct ArtUITestRequire {
+export struct ArkUITestRequire {
   @State message: string = 'Hello World';
 
   @Builder

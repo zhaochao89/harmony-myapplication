@@ -2,7 +2,7 @@ import { mediaquery, window } from '@kit.ArkUI';
 import { common } from '@kit.AbilityKit';
 
 @Component
-export struct ArtUITestMediaQuery {
+export struct ArkUITestMediaQuery {
   @State color: string = '#DB7093';
   @State text: string = 'Portrait';
   @State portraitFunc: mediaquery.MediaQueryResult | void | null = null;

@@ -1,6 +1,6 @@
 
 @Component
-export struct ArtUITestFlex {
+export struct ArkUITestFlex {
 
   build() {
     //direction排列方向，wrap是否换行及换行方向，justifyContent设置元素在主轴方向的对齐方式

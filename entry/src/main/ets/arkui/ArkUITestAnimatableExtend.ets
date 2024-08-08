@@ -14,7 +14,7 @@ function animatableWidth(width: number) {
 }
 
 @Component
-export struct ArtUITestAnimatableExtend {
+export struct ArkUITestAnimatableExtend {
   @State textWidth: number = 80;
 
   build() {

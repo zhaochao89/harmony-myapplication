@@ -6,7 +6,7 @@
 }
 //组件内的@Styles的优先级高于全局@Styles，框架优先找当前组件内的@Styles，找不到则会去全局查找。
 @Component
-export struct ArtUITestStyles {
+export struct ArkUITestStyles {
 
   @State heightValue: number = 100
 

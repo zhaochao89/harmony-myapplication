@@ -1,7 +1,7 @@
 
 const MTop: Record<string, number> = {'top': 10}
 @Component
-export struct ArtUITestStack {
+export struct ArkUITestStack {
 
   build() {
     Column(){

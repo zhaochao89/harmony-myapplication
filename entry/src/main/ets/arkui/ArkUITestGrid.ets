@@ -1,6 +1,6 @@
 
 @Component
-export struct ArtUITestGrid {
+export struct ArkUITestGrid {
   @State services: Array<string> = ['直播', '进口', '精选'];
 
   build() {

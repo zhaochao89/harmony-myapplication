@@ -1,5 +1,5 @@
 @Component
-export struct ArtUITestPage {
+export struct ArkUITestPage {
   @State message: string = 'Hello World';
 
   build() {

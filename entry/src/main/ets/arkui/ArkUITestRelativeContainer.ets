@@ -1,6 +1,6 @@
 
 @Component
-export struct ArtUITestRelativeContainer {
+export struct ArkUITestRelativeContainer {
   build() {
     RelativeContainer() {
       Row().width(100).height(100)

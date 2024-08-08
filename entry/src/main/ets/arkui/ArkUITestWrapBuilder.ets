@@ -21,7 +21,7 @@ function TmpBuilder(value: Tmp) {
 const tmpWrappedBuilder: WrappedBuilder<[Tmp]> = wrapBuilder(TmpBuilder);
 
 @Component
-export struct ArtUITestWrapBuilder {
+export struct ArkUITestWrapBuilder {
 
   @State message: string = 'Hello World';
   @State label: Tmp = new Tmp();

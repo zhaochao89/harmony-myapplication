@@ -1,6 +1,6 @@
 
 @Component
-export struct ArtUITestTabs {
+export struct ArkUITestTabs {
 
   @State
   currentIndex: number = 0;
