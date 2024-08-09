@@ -20,6 +20,10 @@ import { ArkUITestStateStyles } from '../arkui/ArkUITestStateStyles';
 import { ArkUITestAnimatableExtend } from '../arkui/ArkUITestAnimatableExtend';
 import { ArkUITestRequire } from '../arkui/ArkUITestRequire';
 import { ArkTSState } from '../stateManage/ArkTSState';
+import { ArkTSProp } from '../stateManage/ArkTSProp';
+import { ArkTSLink } from '../stateManage/ArkTSLink';
+import { ArkTSProvide } from '../stateManage/ArkTSProvide';
+import { ArkTSObserved } from '../stateManage/ArkTSObserved';
 
 let storage = LocalStorage.getShared();
 //@Entry页面入口，即页面的根节点，一个页面有且仅有一个@Entry。只有被@Entry修饰的组件才可以调用页面的生命周期。
@@ -31,7 +35,7 @@ struct Index {
 
   build() {
     Column(){
-      ArkTSState()
+      ArkTSObserved()
     }
     // .margin({ bottom: this.bottomRectHeight })
   }
