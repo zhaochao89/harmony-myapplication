@@ -1,3 +1,4 @@
+//@Track应用于class对象的属性级更新。@Track装饰的属性变化时，只会触发该属性关联的UI更新。
 @Component
 export struct ArkTSTrack {
   @State logTrack: LogTrack = new LogTrack('Hello');
