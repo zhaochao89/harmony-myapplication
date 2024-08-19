@@ -1,0 +1,12 @@
+{
+  "routerMap": [
+    {
+      "name": "MainPage",
+      "pageSourceFile": "src/main/ets/components/MainPage.ets",
+      "buildFunction": "MainPageBuilder",
+      "data": {
+        "value1": "这是参数"
+      }
+    }
+  ]
+}
