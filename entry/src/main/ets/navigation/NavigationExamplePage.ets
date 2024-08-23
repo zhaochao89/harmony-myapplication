@@ -15,7 +15,7 @@ import('sharedLibrary/src/main/ets/components/MainPage');
 struct NavigationExamplePage {
   @State TooTmp: ToolbarItem = {value: 'func', icon: $r('app.media.ico_user_selected'), action:
   () => {}};
-  @Provide('z') pageInfos: NavPathStack = new NavPathStack();
+  @Provide('pageInfos') pageInfos: NavPathStack = new NavPathStack();
   private arr: string[] = ['跳转页面一', '跳转页面二', '跳转页面三', 'Dialog页面', '动态路由跳转不同模块页面'];
 
   @Builder

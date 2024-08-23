@@ -19,6 +19,10 @@
     {
       "name": "LauncherAbility_label",
       "value": "label"
+    },
+    {
+      "name": "internet_reason",
+      "value": "请求网络数据"
     }
   ]
 }

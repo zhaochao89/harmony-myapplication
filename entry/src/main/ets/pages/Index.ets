@@ -30,6 +30,7 @@ import { ArkTSTrack } from '../stateManage/ArkTSTrack';
 import { ArkUILazyForEach } from '../arkui/ArkUILazyForEach';
 import { ArkTSPromise } from '../arkTS/ArkTSPromise';
 import { ArkTSTaskPool } from '../arkTS/ArkTSTaskPool';
+import { TestHttp } from '../network/HttpRequest';
 
 let storage = LocalStorage.getShared();
 //@Entry页面入口，即页面的根节点，一个页面有且仅有一个@Entry。只有被@Entry修饰的组件才可以调用页面的生命周期。
@@ -41,7 +42,7 @@ struct Index {
 
   build() {
     Column(){
-      ArkTSTaskPool()
+      TestHttp()
     }
     // .margin({ bottom: this.bottomRectHeight })
   }
